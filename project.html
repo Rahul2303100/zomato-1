@@ -1,0 +1,356 @@
+<html>
+<head>
+<title>My Project</title>
+<script type="text/javascript">
+
+    $(window).load(function(){
+      $('.wrapper').flexslider({
+        animation: "slide", // set animation to slide
+        animationLoop: true,
+        itemWidth: 120,
+        itemMargin: 20,
+        minItems: 1,
+        maxItems: 5,
+        smoothheight: true,
+        directionNav: true,
+      });
+    });
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+:root {
+--primary-color: black;
+ 
+      *{
+    padding: 0;
+    margin: 0;
+    box-sizing:0;
+}
+body{
+   
+}
+.container{
+    width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+    width: 100%;
+}
+
+.flexslider{
+    background:none;
+    border:none;
+    box-shadow:none;
+    margin:10px;
+    }    
+  
+}
+body {
+background: red;
+margin: 0;
+font-family: 'Poppins';
+}
+.navbar {
+background: red;
+padding: 1em;
+}
+ 
+ .logo {
+text-decoration: none;
+font-weight: bold;
+color: black;
+font-size: 1.2em;
+
+}
+span {
+color: var(--primary-color);
+
+}
+.nav {
+display: none;
+}
+.container {
+display: flex;
+place-content: space-between;
+}
+.mobile-menu {
+cursor: pointer;
+}
+a {
+color: #444444;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+section {
+padding: 5em  2em;
+}
+.hero {
+text-align: center;
+
+}
+section.features-section {
+background: #20277E;
+color:white;
+}
+ul.features-list {
+margin:0;
+padding-left: .1em;
+}
+li {
+font-size: 1.1em;
+margin-bottom: 1em;
+margin-left: 2em;
+}
+&:before {
+content: '';
+left: -2em;
+position: absolute;
+width: 200px;
+height: 20px;
+background-size: contain;
+.testimonials-section {
+background var(--primary-color);
+
+li {
+background:none;
+text-algin: center;
+padding: 2em 1em;
+width: 80%;
+margin: 0 auto 5em auto;
+border-radius: 1em;
+}
+ img {
+width: 3em;
+height: 3em;
+border: 5px solid #006BD6;
+border-radius: 50%;
+margin-top: -4.5em;
+}
+
+
+</style>
+<body>
+<div class="container">
+        <div class="wrapper">
+            <img src="https://img.mensxp.com/media/content/2019/Jul/zomato-smashed-its-rivals-with-a-single-tweet-trend1400-1562589480_1100x513.jpg">
+            <img src="https://img.mensxp.com/media/content/2019/Jul/zomato-smashed-its-rivals-with-a-single-tweet-trend1400-1562589480_1100x513.jpg">
+            <img src="https://img.mensxp.com/media/content/2019/Jul/zomato-smashed-its-rivals-with-a-single-tweet-trend1400-1562589480_1100x513.jpg">
+            <img src="">
+        </div>
+    </div>
+<div class="navbar">
+<div class="container">
+<a class="logo" href="#">Zoma<span>To</span></a>
+<img id="mobile-cta" class="mobile-menu" src="https://miro.medium.com/max/2400/2*HadQs387WCaaZyQYyhnZUQ.png"  alt="Open Navigation" height=300px width=300px>
+<nav>
+
+<img id="mobile-exit" class="mobile-menu-exit" src="https://miro.medium.com/max/2400/2*HadQs387WCaaZyQYyhnZUQ.png" alt="Close Navigation" height=300px width=300px>
+ 
+
+<ul class="primary-nav">
+<li class="current"><a href="https://www.zomato.com/">Home</a></li>
+<li><a href="https://www.zomato.com/">log-in</a></li>
+<li><a href="https://www.zomato.com/partner_with_us">Features</a></li>
+</ul>
+<ul class="secondary-nav">
+<li class="current"><a href="https://www.zomato.com/contact">Contact</a></li>
+<li class="go-premium-cta"><a href="https://www.zomato.com/careers">Go Premium</a></li>
+<li><a href="#">Features</a></li>
+
+</ul>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="left-col">
+<p class="subhead">Hey! you Whats Up welcome To ZomaTo &amp; Zomato</p>
+<h1>Hurry Up Your Order Dude</h1>
+
+<div class="hero-cta">
+<a href="#" class="primary-cta>Placed Your Order</a>
+<a href="#" class="Check-Plan-cta">
+<img src="https://tse3.mm.bing.net/th?id=OIP.s4UlT2ISanXa3KHKQ2WR0AHaHa&pid=Api&P=0&w=164&h=164" alt="order-List">Check Items
+</a>
+</div>
+</section>
+<img src="https://png.pngtree.com/png-vector/20210628/ourmid/pngtree-delivery-boy-png-image_3510178.jpg" class="hero-img" alt="LIST-ZOMATO Location">
+
+<section class="features-section">
+<div class="container">
+<ul>
+<li>Pizza</li>
+<li>Pizza-Sadwitch</li>
+<li>chiken</li>
+<li>Fish</li>
+<li>Thali</li>
+<li>Cold_Drink</li>
+</ul>
+<img src="https://cdn.static-zoutons.com/images/originals/blog/ZOMATO_NEW_USER_OFFER_(1)_(1)_1577410225.png" alt="List-Of-Items(Todays!-Special)">
+
+<section class="testtimoials-section">
+<dic class="container">
+<ul>
+<li>
+<img src="https://assets.techcircle.in/uploads/article-image/2019/03/images/17971-zomato-sj-vccircle-01.jpg" alt="Rights!">
+<blockquote>Whether you’re looking for biryani to feed your desi cravings, soul comforting pizzas and burgers, or even a salad with a cup of chai or coffee, Zomato is the only app you need for the quickest doorstep delivery of your favourites. With over 1.5 million restaurants and 285 million ratings and reviews, discover the best around you in no time – only on the Zomato app.</blockquote>
+<cite>-Zomato</cite>
+<blockquote>Whether you’re looking for biryani to feed your desi cravings, soul comforting pizzas and burgers, or even a salad with a cup of chai or coffee, Zomato is the only app you need for the quickest doorstep delivery of your favourites. With over 1.5 million restaurants and 285 million ratings and reviews, discover the best around you in no time – only on the Zomato app.</blockquote>
+<cite>-Zomato</cite>
+<blockquote>Whether you’re looking for biryani to feed your desi cravings, soul comforting pizzas and burgers, or even a salad with a cup of chai or coffee, Zomato is the only app you need for the quickest doorstep delivery of your favourites. With over 1.5 million restaurants and 285 million ratings and reviews, discover the best around you in no time – only on the Zomato app.</blockquote>
+<cite>-Zomato</cite>
+</li>
+</ul>
+</section>
+</div>
+
+<section class="contact-section">
+<div class="container">
+<div class="contact-left">
+<h2>Contact</h2>
+<from action="">
+<label for="Order_List">Order!_list</label><br>
+<input type="text" id="Order_list" Order_List="Order_list">
+</form>
+<from action="">
+<label for="name">Name</label>
+<input type="text" id="name" name="name"><br>
+
+<label for="email">Email</label>
+<input type="text" id="email" name="email">
+<label for="message">Message</label><br>
+<textarea name="message" id="message" cols="30" rows="10"></textarea>
+<button type="submit" class="btn btn-lg btn-warning btn-block" >Submit! </button>
+<div class="contact-right"></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27907.916659306782!2d77.05818562594355!3d29.032097238136892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db10d97d2a9b1%3A0x77a157c8b133cef9!2sMurthal%2C%20Haryana%20131027!5e0!3m2!1sen!2sin!4v1646073794009!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+</form>
+</div>
+<div class="imagebg"></div>
+<div class="row " style="margin-top: 50px">
+    <div class="col-md-6 col-md-offset-3 form-container">
+        <h2>Feedback</h2>
+        <p>
+            Please provide your feedback below:
+        </p>
+        <form role="form" method="post" id="reused_form">
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                <label>How do you rate your overall experience?</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="bad" >
+                    Bad
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="average" >
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="good" >
+                    Good
+                    </label>
+                </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <label for="comments">
+                        Comments:</label>
+                    <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Your Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="email">
+                        Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+
+                        <div class="row">
+                <div class="col-sm-6 form-group">
+                    <button type="submit" class="btn btn-lg btn-warning btn-block" >Post </button>
+                </div>
+            </div>
+
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Posted your feedback successfully!</h3>
+        </div>
+        <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+
+        </div>                      
+    </div>
+</div>
+<div>
+<p style="font-size:48px">&#128512;</p>
+<input style="font-size:30px" "radio"></input>
+<p style="font-size:48px">&#128516;</p>
+<input style="font-size:30px" "radio"></input>
+<p style="font-size:48px">&#128514;</p>
+<input style="font-size:30px" "radio"></input>
+<p style="font-size:48px">&#128518;</p>
+<input style="font-size:30px" "radio"></input>
+<p style="font-size:48px">&#128525;</p>
+<input style="font-size:30px" "radio"></input>
+
+<button type="submit" class="btn btn-lg btn-primary btn-block">Submit Feedback!</button>
+</div>
+
+</head>
+</body>
+</html>
